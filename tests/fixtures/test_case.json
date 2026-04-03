@@ -1,0 +1,7 @@
+[
+  {"text": "打印模板怎么设置A4纸", "expected": "config"},
+  {"text": "上周的经营周报", "expected": "report"},
+  {"text": "这个功能怎么用", "expected": "knowledge"},
+  {"text": "帮我写首诗", "expected": "other"},
+  {"text": "今天天气怎么样", "expected": "other"}
+]

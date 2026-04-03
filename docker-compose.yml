@@ -1,0 +1,15 @@
+services:
+  intent-classifier:
+    build: .
+    ports:
+      - "8765:8765"
+    volumes:
+      - ./intents:/app/intents      # 热更新意图配置
+      - ./model_cache:/app/model_cache  # 模型缓存持久化
+    env_file: .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8765/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 3

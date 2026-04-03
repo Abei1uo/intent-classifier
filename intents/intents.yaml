@@ -1,0 +1,35 @@
+intents:
+  knowledge:
+    description: "知识库和帮助文档查询"
+    anchors:
+      - "产品使用说明"
+      - "功能介绍和帮助文档"
+      - "操作指引和使用教程"
+      - "常见问题解答"
+
+  report:
+    description: "报表和数据查询"
+    anchors:
+      - "经营周报查询"
+      - "销售数据报表"
+      - "业务统计分析"
+      - "数据汇总查看"
+
+  config:
+    description: "APP配置和打印模板"
+    anchors:
+      - "打印模板配置"
+      - "APP参数设置"
+      - "模板启用禁用"
+      - "打印格式调整"
+
+  other:
+    description: "无关问题，直接拦截"
+    anchors:
+      - "与业务无关的闲聊"
+      - "天气新闻娱乐话题"
+      - "写作翻译等通用任务"
+
+settings:
+  default_threshold: 0.5
+  model_name: "BAAI/bge-small-zh-v1.5"
